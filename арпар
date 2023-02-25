@@ -1,5 +1,3 @@
-import time
-a=int(input())
-for i in range(a):
-    print("штраф 1000 рублей55")
-    time.sleep(1)
+n=int(input())
+c=n//60
+print (c,n-c*60,sep=":")
