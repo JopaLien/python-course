@@ -1,0 +1,5 @@
+import time
+a=int(input())
+for i in range(a):
+    print("штраф 1000 рублей55")
+    time.sleep(1)
