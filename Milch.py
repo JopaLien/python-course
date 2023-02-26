@@ -1,5 +1,8 @@
 print ("налей молоко в стакан объёмом...", end="")
-a=int(input()) 
+a=int(input())
+if a==0:
+    print("ты забыл взять стакан?")
+    exit()
 print("сколько литров молока ты нальёшь?", end="")
 b=int(input())
 if a<b:
