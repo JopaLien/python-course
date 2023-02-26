@@ -1,3 +1,0 @@
-n=int(input())
-c=n//60
-print (c,n-c*60,sep=":")
