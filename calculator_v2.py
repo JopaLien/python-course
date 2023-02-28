@@ -4,6 +4,7 @@ def enter_mark(mark):
     else:
         raise ValueError("Оценки могут быть только между двойкой и пятеркой включительно")
 
+
 def calculate_marks():
     mark_sum = 0
     mark_count = 0
