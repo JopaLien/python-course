@@ -11,18 +11,19 @@ def calculate_marks():
     while True:
         try:
             mark = int(input())
-            if mark == -1:
-                return mark_sum, mark_count
             enter_mark(mark)
         except ValueError:
             print("Оценки могут быть только целым числом между двойкой и пятеркой включительно")
+        except KeyboardInterrupt:
+            print()
+            return mark_sum, mark_count
         else:
             mark_sum += mark
             mark_count += 1
 
         
 def main():
-    print("Введите свои оценки (-1 для остановки программы):")
+    print("Введите свои оценки (CTRL + C для завершения программы):")
     mark_sum, mark_count = calculate_marks()
     if mark_count == 0:
         print("Не было введено ни одного числа")
